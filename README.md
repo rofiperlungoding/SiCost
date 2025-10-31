@@ -1,265 +1,173 @@
-# 🚀 SICOST - Professional Website Building Service
+# SiCost - Professional Website Services for SMEs
 
 <div align="center">
 
-![SICOST Logo](https://img.shields.io/badge/SICOST-Website%20Builder-blue?style=for-the-badge&logo=react)
+![SiCost Logo](https://via.placeholder.com/200x80/DC2626/FFFFFF?text=SiCost)
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+**Website Profesional untuk UMKM Indonesia**
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)](https://github.com/sicost/website)
-[![Code Quality](https://img.shields.io/badge/code%20quality-A-brightgreen?style=flat-square)](https://github.com/sicost/website)
-[![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
+[![React](https://img.shields.io/badge/React-18.x-61DAFB?style=flat&logo=react&logoColor=white)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
 
-*Enterprise-grade website building service platform built with modern web technologies*
-
-[🌐 Live Demo](https://sicost.vercel.app) • [📖 Documentation](docs/) • [🐛 Report Bug](issues/) • [✨ Request Feature](issues/)
+[Live Demo](https://sicost.com) • [Documentation](#-documentation) • [Contact](#-contact)
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+## 📖 About SiCost
 
-- [🎯 Overview](#-overview)
-- [✨ Features](#-features)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [🚀 Quick Start](#-quick-start)
-- [⚙️ Development](#️-development)
-- [🏗️ Build & Deployment](#️-build--deployment)
-- [🌍 Environment Variables](#-environment-variables)
-- [📁 Project Structure](#-project-structure)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
+SiCost is a professional web development service specializing in creating **affordable, high-quality websites** for small and medium-sized businesses (UMKM) in Indonesia. We believe every business deserves a strong online presence without breaking the bank.
 
----
+### 🎯 Our Mission
 
-## 🎯 Overview
+From consultation to maintenance, we're here to help businesses establish their digital identity and grow online.
 
-**SICOST** is a cutting-edge website building service platform designed to deliver professional, scalable, and SEO-optimized websites for businesses of all sizes. Built with enterprise-grade architecture and modern development practices, SICOST provides a comprehensive solution for digital presence establishment.
+### ✨ Key Highlights
 
-### 🎨 Design Philosophy
-
-- **Performance First**: Optimized for Core Web Vitals and lighthouse scores
-- **Accessibility**: WCAG 2.1 AA compliant design patterns
-- **Scalability**: Modular architecture supporting rapid feature development
-- **User Experience**: Intuitive interfaces with smooth animations and interactions
+- 💰 **Affordable Pricing**: Starting from Rp 120,000
+- 🤝 **Personal Touch**: Direct communication with founder
+- 🛠️ **Ongoing Support**: Maintenance included in select packages
+- 🌐 **Bilingual**: Full Indonesian & English support
+- 📱 **Mobile-First**: Responsive design for all devices
+- ⚡ **Fast & Accessible**: Performance-optimized
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-### 🌟 Core Features
+### Core Features
 
-- **🎨 Modern UI/UX**: Clean, responsive design with Tailwind CSS
-- **🌐 Internationalization**: Multi-language support (Indonesian/English)
-- **📱 Mobile-First**: Fully responsive across all device sizes
-- **⚡ Performance**: Lightning-fast loading with Vite bundling
-- **🔍 SEO Optimized**: Meta tags, structured data, and sitemap generation
-- **📧 Contact Forms**: Integrated EmailJS for seamless communication
-- **🎭 Animations**: Smooth transitions with Framer Motion
-- **♿ Accessibility**: Screen reader friendly and keyboard navigation
+- ✅ **Comprehensive Service Packages** - Basic, Standard, Standard + Maintenance, Premium
+- ✅ **Portfolio Showcase** - Display completed projects with tech stack
+- ✅ **Multilingual Support** - Indonesian and English with i18n
+- ✅ **Contact Form** - Integrated with EmailJS for inquiries
+- ✅ **FAQ Section** - 15 comprehensive frequently asked questions
+- ✅ **SEO Optimized** - Meta tags, Open Graph, structured data
+- ✅ **Responsive Design** - Works seamlessly on mobile, tablet, desktop
+- ✅ **Smooth Animations** - Framer Motion for delightful interactions
+- ✅ **Dark Mode Ready** - Foundation for future dark mode implementation
 
-### 🛡️ Technical Features
+### Technical Features
 
-- **🔒 Type Safety**: Full TypeScript implementation
-- **📋 Form Validation**: Robust validation with React Hook Form + Zod
-- **🎯 Code Quality**: ESLint + Prettier for consistent code style
-- **🧪 Testing Ready**: Configured for unit and integration testing
-- **📊 Analytics Ready**: Google Analytics and tracking integration
-- **🚀 CI/CD Ready**: Automated deployment pipelines
+- 🎨 **Modern UI Components** - Reusable, type-safe React components
+- 🔍 **Type Safety** - Full TypeScript coverage
+- 🎯 **Form Validation** - React Hook Form + Zod schema validation
+- 🌍 **Internationalization** - react-i18next with localStorage persistence
+- 📊 **SEO Management** - React Helmet Async for meta tags
+- 🎭 **Smooth Animations** - Framer Motion with scroll triggers
+- 🔗 **Clean Routing** - React Router v6 with nested routes
+- 📦 **Optimized Build** - Vite for lightning-fast builds
+
+---
+
+## 📦 Service Packages
+
+| Package | Price | Features | Timeline |
+|---------|-------|----------|----------|
+| **Basic** | Rp 120,000 | 1-page landing, mobile responsive, contact form, Google Maps | 7-12 days |
+| **Standard** | Rp 220,000 | 3-5 pages, WhatsApp integration, basic SEO, 2x revisions | 7-12 days |
+| **Standard + Maintenance** | Rp 320,000 | All Standard features + 3 months support & updates | 7-16 days |
+| **Premium** | Custom Quote | Fully custom, e-commerce, booking systems, advanced features | Custom |
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend Core
-- **[React 19](https://reactjs.org/)** - UI Library with latest features
-- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
-- **[Vite](https://vitejs.dev/)** - Next-generation build tool
-- **[React Router](https://reactrouter.com/)** - Client-side routing
+### Frontend
 
-### Styling & UI
-- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[Lucide React](https://lucide.dev/)** - Beautiful icon library
-- **[Framer Motion](https://www.framer.com/motion/)** - Animation library
+- **Framework**: React 18.x
+- **Language**: TypeScript 5.x
+- **Styling**: Tailwind CSS 3.x
+- **Build Tool**: Vite 5.x
+- **Routing**: React Router v6
+- **State Management**: React Hooks (useState, useReducer)
 
-### Forms & Validation
-- **[React Hook Form](https://react-hook-form.com/)** - Performant forms
-- **[Zod](https://zod.dev/)** - TypeScript-first schema validation
-- **[Hookform Resolvers](https://github.com/react-hook-form/resolvers)** - Validation integration
+### Form & Validation
 
-### Internationalization & SEO
-- **[React i18next](https://react.i18next.com/)** - Internationalization framework
-- **[React Helmet Async](https://github.com/staylor/react-helmet-async)** - Document head management
+- **Form Management**: React Hook Form
+- **Validation**: Zod
+- **Email Service**: EmailJS
+
+### UI & UX
+
+- **Icons**: Lucide React
+- **Animations**: Framer Motion
+- **Internationalization**: react-i18next
+
+### SEO & Analytics
+
+- **Meta Management**: React Helmet Async
+- **Analytics**: Google Analytics 4 (optional)
 
 ### Development Tools
-- **[ESLint](https://eslint.org/)** - Code linting
-- **[Prettier](https://prettier.io/)** - Code formatting
-- **[PostCSS](https://postcss.org/)** - CSS processing
+
+- **Linting**: ESLint + TypeScript ESLint
+- **Formatting**: Prettier
+- **Version Control**: Git
 
 ---
 
-## 🚀 Quick Start
+## 🏁 Getting Started
 
 ### Prerequisites
 
-Ensure you have the following installed:
-- **Node.js** >= 18.0.0
-- **npm** >= 8.0.0 or **yarn** >= 1.22.0
+- Node.js 18.x or higher
+- npm or pnpm
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/sicost/website.git
+git clone https://github.com/yourusername/sicost-website.git
+
+# Navigate to project directory
 cd sicost-website
 
 # Install dependencies
 npm install
+```
 
-# Copy environment variables
-cp .env.example .env
+### Environment Setup
 
+Create a `.env` file in the root directory:
+
+```env
+VITE_APP_TITLE=SiCost
+VITE_EMAILJS_SERVICE_ID=your_emailjs_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_emailjs_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
+VITE_WHATSAPP_NUMBER=628xxxxxxxxxx
+VITE_EMAIL=contact@sicost.com
+```
+
+### Development
+
+```bash
 # Start development server
 npm run dev
+
+# Open browser at http://localhost:5173
 ```
 
-🎉 **Success!** Open [http://localhost:5173](http://localhost:5173) to view the application.
-
----
-
-## ⚙️ Development
-
-### Available Scripts
+### Build for Production
 
 ```bash
-# Development
-npm run dev          # Start development server
-npm run preview      # Preview production build locally
+# Type check
+npm run type-check
 
-# Build
-npm run build        # Create production build
-npm run build:analyze # Analyze bundle size
+# Lint code
+npm run lint
 
-# Code Quality
-npm run lint         # Run ESLint
-npm run lint:fix     # Fix ESLint issues
-npm run format       # Format code with Prettier
-npm run format:check # Check code formatting
-
-# Type Checking
-npm run type-check   # Run TypeScript compiler check
-```
-
-### Development Workflow
-
-1. **Feature Development**
-   ```bash
-   git checkout -b feature/your-feature-name
-   npm run dev
-   # Make your changes
-   npm run lint && npm run type-check
-   git commit -m "feat: add your feature"
-   ```
-
-2. **Code Quality Checks**
-   ```bash
-   npm run format:check  # Ensure code formatting
-   npm run lint          # Check for linting issues
-   npm run type-check    # Verify TypeScript types
-   ```
-
-3. **Testing**
-   ```bash
-   npm run test          # Run unit tests
-   npm run test:coverage # Generate coverage report
-   ```
-
----
-
-## 🏗️ Build & Deployment
-
-### Production Build
-
-```bash
-# Create optimized production build
+# Build for production
 npm run build
 
 # Preview production build
 npm run preview
 ```
-
-### Deployment Options
-
-#### Vercel (Recommended)
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel --prod
-```
-
-#### Netlify
-```bash
-# Build command: npm run build
-# Publish directory: dist
-```
-
-#### Docker
-```dockerfile
-FROM node:18-alpine
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci --only=production
-COPY . .
-RUN npm run build
-EXPOSE 3000
-CMD ["npm", "run", "preview"]
-```
-
----
-
-## 🌍 Environment Variables
-
-Create a `.env` file in the root directory:
-
-```env
-# Application Configuration
-VITE_APP_NAME=SICOST Website Builder
-VITE_APP_LOCALE=id
-
-# API Configuration
-VITE_API_BASE_URL=https://api.sicost.com
-VITE_WA_NUMBER=6281234567890
-
-# Analytics (Optional)
-VITE_GA_TRACKING_ID=G-XXXXXXXXXX
-VITE_GTM_ID=GTM-XXXXXXX
-
-# Email Service (EmailJS)
-VITE_EMAILJS_SERVICE_ID=your_service_id
-VITE_EMAILJS_TEMPLATE_ID=your_template_id
-VITE_EMAILJS_PUBLIC_KEY=your_public_key
-
-# Feature Flags
-VITE_ENABLE_ANALYTICS=true
-VITE_ENABLE_CHAT=false
-```
-
-### Environment Variable Reference
-
-| Variable | Description | Required | Default |
-|----------|-------------|----------|---------|
-| `VITE_APP_NAME` | Application name | ✅ | SICOST Website Builder |
-| `VITE_APP_LOCALE` | Default locale | ✅ | id |
-| `VITE_WA_NUMBER` | WhatsApp contact number | ✅ | - |
-| `VITE_GA_TRACKING_ID` | Google Analytics ID | ❌ | - |
-| `VITE_EMAILJS_SERVICE_ID` | EmailJS service ID | ❌ | - |
 
 ---
 
@@ -267,100 +175,323 @@ VITE_ENABLE_CHAT=false
 
 ```
 sicost-website/
-├── 📁 public/                 # Static assets
-├── 📁 src/
-│   ├── 📁 components/         # Reusable UI components
-│   │   ├── 📁 ui/            # Base UI components
-│   │   ├── FeatureCard.tsx   # Feature display component
-│   │   ├── PackageCard.tsx   # Service package component
-│   │   └── ServiceCard.tsx   # Service detail component
-│   ├── 📁 config/            # Configuration files
-│   │   ├── i18n.ts          # Internationalization setup
-│   │   └── routes.ts        # Route definitions
-│   ├── 📁 data/             # Static data and content
-│   │   ├── faq.ts           # FAQ content
+├── public/                  # Static assets
+│   ├── favicon.ico
+│   └── robots.txt
+├── src/
+│   ├── assets/              # Images, illustrations
+│   ├── components/
+│   │   ├── ui/              # Reusable UI components (Button, Card, etc.)
+│   │   ├── layout/          # Layout components (Header, Footer)
+│   │   ├── sections/        # Page sections (Hero, Pricing, etc.)
+│   │   └── common/          # Shared components (ContactForm, etc.)
+│   ├── pages/               # Page components
+│   │   ├── HomePage.tsx
+│   │   ├── LayananPage.tsx
+│   │   ├── PortfolioPage.tsx
+│   │   ├── TentangPage.tsx
+│   │   ├── FAQPage.tsx
+│   │   ├── KontakPage.tsx
+│   │   └── NotFoundPage.tsx
+│   ├── hooks/               # Custom React hooks
+│   ├── utils/               # Utility functions
+│   ├── types/               # TypeScript type definitions
+│   ├── locales/             # i18n translation files
+│   │   ├── en/              # English translations
+│   │   └── id/              # Indonesian translations
+│   ├── config/              # Configuration files
+│   │   ├── i18n.ts
+│   │   └── routes.ts
+│   ├── data/                # Static data
 │   │   ├── packages.ts      # Service packages
-│   │   └── portfolio.ts     # Portfolio items
-│   ├── 📁 layouts/          # Layout components
-│   │   └── Layout.tsx       # Main layout wrapper
-│   ├── 📁 pages/            # Page components
-│   │   ├── Home.tsx         # Homepage
-│   │   ├── Services.tsx     # Services page
-│   │   ├── Portfolio.tsx    # Portfolio showcase
-│   │   ├── About.tsx        # About page
-│   │   ├── Contact.tsx      # Contact page
-│   │   ├── FAQ.tsx          # FAQ page
-│   │   └── NotFound.tsx     # 404 page
-│   ├── App.tsx              # Root component
-│   ├── main.tsx             # Application entry point
+│   │   ├── portfolio.ts     # Portfolio projects
+│   │   └── faq.ts           # FAQ items
+│   ├── App.tsx              # Main App component
+│   ├── main.tsx             # Entry point
 │   └── index.css            # Global styles
-├── 📄 package.json           # Dependencies and scripts
-├── 📄 tailwind.config.js     # Tailwind configuration
-├── 📄 tsconfig.json          # TypeScript configuration
-├── 📄 vite.config.ts         # Vite configuration
-├── 📄 eslint.config.js       # ESLint configuration
-├── 📄 .prettierrc            # Prettier configuration
-└── 📄 README.md              # Project documentation
+├── .env.example             # Environment variables template
+├── .gitignore
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+├── tailwind.config.js
+├── postcss.config.js
+└── README.md
 ```
 
-### Architecture Principles
+---
 
-- **Component-Based**: Modular, reusable components
-- **Type-Safe**: Full TypeScript coverage
-- **Performance**: Code splitting and lazy loading
-- **Maintainable**: Clear separation of concerns
-- **Scalable**: Easy to extend and modify
+## 🎨 Design System
+
+### Color Palette
+
+- **Primary Red**: `#DC2626` - Brand color, CTAs, accents
+- **White**: `#FFFFFF` - Background, negative space
+- **Gray Scale**: `#F9FAFB` to `#111827` - Text, borders, surfaces
+
+### Typography
+
+- **Font Family**: Inter (Google Fonts)
+- **Weights**: 400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold)
+
+### Design Principles
+
+- ✨ **Minimalist** - Clean layouts, ample whitespace
+- 📐 **Consistent** - 8px spacing grid system
+- 🎯 **Accessible** - WCAG 2.1 Level AA compliant
+- 📱 **Mobile-First** - Optimized for mobile devices
+
+---
+
+## 🌐 Pages
+
+### Main Pages
+
+1. **Home (`/`)** - Hero, service overview, pricing preview, portfolio showcase
+2. **Layanan (`/layanan`)** - Detailed service packages and workflow
+3. **What We've Built (`/portfolio`)** - Portfolio showcase
+4. **Tentang Kami (`/tentang`)** - About us, story, values, credentials
+5. **FAQ (`/faq`)** - 15 frequently asked questions
+6. **Kontak (`/kontak`)** - Contact form and information
+
+### Error Pages
+
+- **404 Not Found** - Friendly error page with navigation
+
+---
+
+## 🔧 Configuration
+
+### Tailwind Configuration
+
+Custom colors, fonts, and utilities defined in `tailwind.config.js`:
+
+```javascript
+theme: {
+  extend: {
+    colors: {
+      brand: {
+        red: '#DC2626',
+        'red-light': '#FEF2F2',
+        'red-dark': '#B91C1C',
+      },
+    },
+    fontFamily: {
+      sans: ['Inter', 'sans-serif'],
+    },
+  },
+}
+```
+
+### Route Configuration
+
+Routes defined in `src/config/routes.ts`:
+
+```typescript
+export const routes = {
+  home: '/',
+  services: '/layanan',
+  portfolio: '/portfolio',
+  about: '/tentang',
+  faq: '/faq',
+  contact: '/kontak',
+}
+```
+
+---
+
+## 📊 Performance Targets
+
+### Lighthouse Scores
+
+- ⚡ **Performance**: 90+
+- ♿ **Accessibility**: 95+
+- 🎯 **Best Practices**: 95+
+- 🔍 **SEO**: 95+
+
+### Core Web Vitals
+
+- **LCP** (Largest Contentful Paint): < 2.5s
+- **FID** (First Input Delay): < 100ms
+- **CLS** (Cumulative Layout Shift): < 0.1
+
+---
+
+## ♿ Accessibility
+
+- ✅ WCAG 2.1 Level AA compliant
+- ✅ Semantic HTML structure
+- ✅ ARIA labels where appropriate
+- ✅ Keyboard navigation support
+- ✅ Focus indicators visible
+- ✅ Color contrast ratio 4.5:1 minimum
+- ✅ Alt text for all images
+- ✅ Form labels and error messages
+
+---
+
+## 🌍 Internationalization
+
+### Supported Languages
+
+- 🇮🇩 **Indonesian (ID)** - Default
+- 🇬🇧 **English (EN)**
+
+### Language Switching
+
+Language preference is stored in `localStorage` and persists across sessions.
+
+### Translation Files
+
+Located in `src/locales/`:
+- `en/` - English translations
+- `id/` - Indonesian translations
+
+---
+
+## 🚀 Deployment
+
+### Recommended Platforms
+
+1. **Vercel** (Recommended)
+   ```bash
+   npm i -g vercel
+   vercel --prod
+   ```
+
+2. **Netlify**
+   - Connect GitHub repository
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+
+3. **GitHub Pages**
+   ```bash
+   npm run build
+   # Upload dist/ folder
+   ```
+
+4. **Hostinger** (Traditional Hosting)
+   - Upload `dist/` contents to `public_html`
+   - Configure `.htaccess` for SPA routing
+
+---
+
+## 📈 Future Enhancements
+
+### Planned Features
+
+- [ ] Blog section for web development tips
+- [ ] Client testimonials carousel
+- [ ] Detailed case studies
+- [ ] Project quote calculator
+- [ ] Client dashboard/portal
+- [ ] Live chat integration
+- [ ] Newsletter subscription
+- [ ] Advanced portfolio filtering
+- [ ] Dark mode implementation
+- [ ] Progressive Web App (PWA)
+
+### Technical Improvements
+
+- [ ] Server-Side Rendering (Next.js migration)
+- [ ] Backend API for form submissions
+- [ ] Database integration
+- [ ] Admin CMS panel
+- [ ] Advanced analytics
+- [ ] A/B testing setup
+
+---
+
+## 🧪 Testing
+
+### Manual Testing
+
+```bash
+# Run linter
+npm run lint
+
+# Type checking
+npm run type-check
+
+# Build test
+npm run build && npm run preview
+```
+
+### Testing Checklist
+
+- [ ] All routes accessible
+- [ ] Forms validate correctly
+- [ ] Language switching works
+- [ ] Responsive on mobile/tablet/desktop
+- [ ] No console errors
+- [ ] SEO meta tags present
+- [ ] Accessibility audit passed
+- [ ] Performance targets met
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions from the community! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting pull requests.
+This is a proprietary project for SiCost web development services. 
 
-### Development Process
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'feat: add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
-
-### Commit Convention
-
-We follow [Conventional Commits](https://www.conventionalcommits.org/):
-
-```
-feat: add new feature
-fix: bug fix
-docs: documentation changes
-style: formatting changes
-refactor: code refactoring
-test: adding tests
-chore: maintenance tasks
-```
-
-### Code Style
-
-- Use **TypeScript** for all new code
-- Follow **ESLint** and **Prettier** configurations
-- Write **meaningful commit messages**
-- Add **JSDoc comments** for complex functions
-- Ensure **100% type coverage**
+For inquiries, suggestions, or collaboration opportunities, please contact us through:
+- Website contact form
+- Email: [your-email]
+- WhatsApp: [your-number]
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+© 2025 SiCost. All rights reserved.
+
+This project is proprietary software. Unauthorized copying, modification, distribution, or use of this software, via any medium, is strictly prohibited.
+
+---
+
+## 📞 Contact
+
+<div align="center">
+
+**SiCost - Professional Website Services**
+
+🌐 **Website**: [sicost.com](https://sicost.com)  
+📱 **WhatsApp**: +62 xxx-xxxx-xxxx  
+📧 **Email**: contact@sicost.com  
+📍 **Location**: Malang, East Java, Indonesia
+
+[![Instagram](https://img.shields.io/badge/Instagram-@sicost.id-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/sicost.id)
+[![Facebook](https://img.shields.io/badge/Facebook-SiCost_Official-1877F2?style=flat&logo=facebook&logoColor=white)](https://facebook.com/sicostofficial)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-SiCost-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/company/sicost)
+
+</div>
+
+---
+
+## 🙏 Acknowledgments
+
+### Technologies
+
+- [React](https://reactjs.org/) - UI library
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling framework
+- [Vite](https://vitejs.dev/) - Build tool
+- [Framer Motion](https://www.framer.com/motion/) - Animations
+
+### Design Resources
+
+- [Lucide](https://lucide.dev/) - Icon library
+- [Google Fonts](https://fonts.google.com/) - Inter font family
+- [Unsplash](https://unsplash.com/) - Stock photography
+- [unDraw](https://undraw.co/) - Illustrations
 
 ---
 
 <div align="center">
 
-### 🌟 Star this repository if you find it helpful!
+**Made with ❤️ in Malang, Indonesia**
 
-**Built with ❤️ by the SICOST Team**
-
-[🌐 Website](https://sicost.com) • [📧 Contact](mailto:hello@sicost.com) • [🐦 Twitter](https://twitter.com/sicost)
+⭐ Star this repo if you find it helpful!
 
 </div>
