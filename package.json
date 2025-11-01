@@ -2,6 +2,7 @@
   "name": "sicost-website",
   "private": true,
   "version": "0.0.0",
+  "description": "SiCost — layanan pembuatan website profesional untuk UMKM Indonesia. Fokus pada performa, aksesibilitas, SEO, dan desain modern; dibangun dengan React, TypeScript, Vite, dan Tailwind CSS.",
   "type": "module",
   "scripts": {
     "dev": "vite",
