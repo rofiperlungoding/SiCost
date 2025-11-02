@@ -15,6 +15,11 @@ export default function Home() {
   const waHeroLink = buildWhatsAppLink(t(templateMap.homeHero))
   const waFinalLink = buildWhatsAppLink(t(templateMap.homeFinalCta))
 
+  // Ensure typed arrays for package features (t with returnObjects yields object/unknown)
+  const featuresBasic = t('packages.basic.features', { returnObjects: true }) as unknown as string[]
+  const featuresStandard = t('packages.standard.features', { returnObjects: true }) as unknown as string[]
+  const featuresMaintenance = t('packages.maintenance.features', { returnObjects: true }) as unknown as string[]
+
   return (
     <div className="bg-white">
       {/* Hero */}
@@ -117,14 +122,14 @@ export default function Home() {
               title={t('packages.basic.title')}
               price={t('packages.basic.price')}
               tagline={t('packages.basic.tagline')}
-              features={t('packages.basic.features', { returnObjects: true })}
+              features={featuresBasic}
               timeline={t('packages.basic.timeline')}
             />
             <PackageCard
               title={t('packages.standard.title')}
               price={t('packages.standard.price')}
               tagline={t('packages.standard.tagline')}
-              features={t('packages.standard.features', { returnObjects: true })}
+              features={featuresStandard}
               timeline={t('packages.standard.timeline')}
               popular
             />
@@ -132,7 +137,7 @@ export default function Home() {
               title={t('packages.maintenance.title')}
               price={t('packages.maintenance.price')}
               tagline={t('packages.maintenance.tagline')}
-              features={t('packages.maintenance.features', { returnObjects: true })}
+              features={featuresMaintenance}
               timeline={t('packages.maintenance.timeline')}
             />
           </div>
@@ -143,7 +148,7 @@ export default function Home() {
                 title={t('packages.standard.title')}
                 price={t('packages.standard.price')}
                 tagline={t('packages.standard.tagline')}
-                features={t('packages.standard.features', { returnObjects: true })}
+                features={featuresStandard}
                 timeline={t('packages.standard.timeline')}
                 popular
               />
@@ -153,7 +158,7 @@ export default function Home() {
                 title={t('packages.basic.title')}
                 price={t('packages.basic.price')}
                 tagline={t('packages.basic.tagline')}
-                features={t('packages.basic.features', { returnObjects: true })}
+                features={featuresBasic}
                 timeline={t('packages.basic.timeline')}
               />
             </div>
@@ -162,7 +167,7 @@ export default function Home() {
                 title={t('packages.maintenance.title')}
                 price={t('packages.maintenance.price')}
                 tagline={t('packages.maintenance.tagline')}
-                features={t('packages.maintenance.features', { returnObjects: true })}
+                features={featuresMaintenance}
                 timeline={t('packages.maintenance.timeline')}
               />
             </div>
