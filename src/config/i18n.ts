@@ -5,6 +5,31 @@ const resources = {
   id: {
     common: {
       brand: 'SICOST',
+      lang: {
+        idShort: 'ID',
+        enShort: 'EN',
+        toggleAria: 'Ganti bahasa',
+      },
+      aria: {
+        toggleLanguage: 'Ganti bahasa',
+        startConsultation: 'Mulai konsultasi melalui WhatsApp',
+        viewPortfolio: 'Lihat portfolio proyek',
+      },
+      whatsapp: {
+        message: {
+          consultation: 'Halo SICOST, saya mau konsultasi website.',
+          layoutNav: 'Halo! Saya ingin mulai konsultasi dari navigasi situs.',
+          homeHero: 'Halo! Saya melihat halaman utama dan ingin konsultasi website.',
+          homeFinalCta: 'Halo! Saya siap memulai. Mohon bantu konsultasi pembuatan website.',
+          servicesFinalGetStarted: 'Halo! Saya ingin konsultasi tentang layanan pembuatan website.',
+          servicesFinalContact: 'Halo! Tolong rekomendasikan paket yang paling cocok untuk bisnis saya.',
+          servicesCard: 'Halo! Saya tertarik dengan {{package}}. Bisakah kita diskusi lebih lanjut?',
+          portfolioCta: 'Halo! Saya tertarik setelah melihat portfolio. Bisa diskusi proyek saya?',
+          aboutFinalCta: 'Halo! Saya ingin tahu lebih lanjut tentang SICOST dan mulai konsultasi.',
+          faqSupport: 'Halo! Saya tidak menemukan jawaban di FAQ. Mohon bantu konsultasi.',
+          contactSupport: 'Halo! Saya ingin menghubungi tim support via WhatsApp.',
+        },
+      },
       nav: {
         home: 'Beranda',
         services: 'Layanan',
@@ -12,6 +37,11 @@ const resources = {
         about: 'Tentang',
         faq: 'FAQ',
         contact: 'Kontak',
+      },
+      notFound: {
+        title: 'Halaman tidak ditemukan',
+        description: 'Halaman yang Anda cari tidak tersedia.',
+        back: 'Kembali ke Beranda',
       },
       faq: {
         seo: {
@@ -292,6 +322,13 @@ const resources = {
       // Filters (for package list)
       filters: {
         all: 'Semua',
+        search: 'Cari proyek',
+        searchPlaceholder: 'Ketik judul/fitur/teknologi',
+        category: 'Kategori',
+        sort: 'Urutkan',
+        recent: 'Terbaru',
+        az: 'Nama A-Z',
+        za: 'Nama Z-A',
       },
       cta: {
         getStarted: 'Mulai Konsultasi',
@@ -305,6 +342,11 @@ const resources = {
       hero: {
         h1: 'Website Profesional untuk UMKM',
         sub: 'Dari Konsultasi Hingga Maintenance - Kami Ada untuk Membantu',
+      },
+      home: {
+        customPrompt: 'Butuh website custom atau fitur khusus?',
+        contactLink: 'Hubungi Kami',
+        premiumSuffix: 'untuk Paket Premium',
       },
       why: {
         title: 'Kenapa Pilih SiCost?',
@@ -336,6 +378,14 @@ const resources = {
           price: 'Mulai dari Rp 120.000',
           tagline: 'Perfect untuk landing page sederhana',
           timeline: '7-12 hari kerja',
+          features: [
+            'Landing Page (1 halaman)',
+            'Mobile Responsive',
+            'Form Kontak',
+            'Google Maps',
+            '1x Revisi',
+            'Panduan Upload',
+          ],
         },
         standard: {
           title: 'Standard',
@@ -343,12 +393,29 @@ const resources = {
           tagline: 'Untuk website bisnis lengkap',
           timeline: '7-12 hari kerja',
           badge: 'Paling Populer',
+          features: [
+            'Website 3-5 halaman',
+            'Mobile Responsive',
+            'Form + WhatsApp Button',
+            'Google Maps',
+            'Basic SEO Setup',
+            '2x Revisi',
+            'Panduan Upload',
+          ],
         },
         maintenance: {
           title: 'Standard + Maintenance',
           price: 'Mulai dari Rp 320.000',
           tagline: 'Website + dukungan penuh',
           timeline: '7-16 hari kerja (+ support)',
+          features: [
+            'Semua fitur Standard',
+            'Support 3 bulan',
+            'Update konten ringan',
+            'Bug fixing',
+            'Monitoring',
+            'Konsultasi WhatsApp',
+          ],
         },
         // Premium (alias untuk filter label)
         premium: {
@@ -358,6 +425,23 @@ const resources = {
       portfolio: {
         title: 'Project Terbaru Kami',
         subtitle: 'Lihat hasil kerja kami untuk berbagai jenis bisnis',
+        card: {
+          updated: 'Diperbarui',
+          featuresTitle: 'Fitur Utama',
+          techTitle: 'Teknologi',
+          viewGithub: 'Lihat di GitHub',
+          viewWebsite: 'Kunjungi Website',
+        },
+        filters: {
+          searchLabel: 'Cari proyek',
+          searchPlaceholder: 'Ketik judul/fitur/teknologi',
+          categoryLabel: 'Kategori',
+          all: 'Semua',
+          sortLabel: 'Urutkan',
+          recent: 'Terbaru',
+          az: 'Nama A-Z',
+          za: 'Nama Z-A',
+        },
       },
       finalCta: {
         title: 'Siap mulai? Konsultasi gratis untuk kebutuhan website Anda',
@@ -509,6 +593,31 @@ const resources = {
   en: {
     common: {
       brand: 'SICOST',
+      lang: {
+        idShort: 'ID',
+        enShort: 'EN',
+        toggleAria: 'Toggle language',
+      },
+      aria: {
+        toggleLanguage: 'Toggle language',
+        startConsultation: 'Start WhatsApp consultation',
+        viewPortfolio: 'View portfolio projects',
+      },
+      whatsapp: {
+        message: {
+          consultation: "Hello SICOST, I'd like to consult about a website.",
+          layoutNav: "Hi! I'd like to start a consultation from the navigation.",
+          homeHero: "Hi! I saw the homepage and want to discuss a website.",
+          homeFinalCta: "Hi! I'm ready to get started. Please help with consultation.",
+          servicesFinalGetStarted: "Hi! I'd like to consult about website services.",
+          servicesFinalContact: "Hi! Please recommend the package that fits my business.",
+          servicesCard: "Hi! I'm interested in {{package}}. Could we discuss further?",
+          portfolioCta: "Hi! I'm interested after viewing your portfolio. I'd like to discuss my project.",
+          aboutFinalCta: "Hi! I'd like to learn more about SICOST and start a consultation.",
+          faqSupport: "Hi! I couldn't find the answer in FAQ. I'd like some help.",
+          contactSupport: "Hi! I'd like to contact the support team via WhatsApp.",
+        },
+      },
       nav: {
         home: 'Home',
         services: 'Services',
@@ -516,6 +625,11 @@ const resources = {
         about: 'About',
         faq: 'FAQ',
         contact: 'Contact',
+      },
+      notFound: {
+        title: 'Page not found',
+        description: 'The page you are looking for is unavailable.',
+        back: 'Back to Home',
       },
       faq: {
         seo: {
@@ -810,6 +924,11 @@ const resources = {
         h1: 'Professional Websites for Small Businesses',
         sub: "From Consultation to Maintenance - We're Here to Help",
       },
+      home: {
+        customPrompt: 'Need a custom website or special features?',
+        contactLink: 'Contact Us',
+        premiumSuffix: 'for the Premium Package',
+      },
       why: {
         title: 'Why Choose SiCost?',
         subtitle: 'We understand small business needs and offer the right solutions',
@@ -839,6 +958,14 @@ const resources = {
           price: 'Starting from Rp 120,000',
           tagline: 'Perfect for simple landing pages',
           timeline: '7-12 working days',
+          features: [
+            'Landing Page (1 page)',
+            'Mobile Responsive',
+            'Contact Form',
+            'Google Maps',
+            '1x Revision',
+            'Upload Guide',
+          ],
         },
         standard: {
           title: 'Standard',
@@ -846,12 +973,29 @@ const resources = {
           tagline: 'For complete business websites',
           timeline: '7-12 working days',
           badge: 'Most Popular',
+          features: [
+            'Website 3-5 pages',
+            'Mobile Responsive',
+            'Form + WhatsApp Button',
+            'Google Maps',
+            'Basic SEO Setup',
+            '2x Revisions',
+            'Upload Guide',
+          ],
         },
         maintenance: {
           title: 'Standard + Maintenance',
           price: 'Starting from Rp 320,000',
           tagline: 'Website + full support',
           timeline: '7-16 working days (+ support)',
+          features: [
+            'All Standard features',
+            '3 months support',
+            'Light content updates',
+            'Bug fixing',
+            'Monitoring',
+            'WhatsApp Consultation',
+          ],
         },
         // Premium (alias for filter label)
         premium: {
@@ -861,6 +1005,23 @@ const resources = {
       portfolio: {
         title: 'Our Latest Projects',
         subtitle: 'See our work for various types of businesses',
+        card: {
+          updated: 'Updated',
+          featuresTitle: 'Key Features',
+          techTitle: 'Technologies',
+          viewGithub: 'View on GitHub',
+          viewWebsite: 'Visit Website',
+        },
+        filters: {
+          searchLabel: 'Search projects',
+          searchPlaceholder: 'Type title/feature/technology',
+          categoryLabel: 'Category',
+          all: 'All',
+          sortLabel: 'Sort',
+          recent: 'Most Recent',
+          az: 'Name A-Z',
+          za: 'Name Z-A',
+        },
       },
       finalCta: {
         title: 'Ready to start? Free consultation for your website needs',
@@ -1011,16 +1172,35 @@ const resources = {
   },
 }
 
+// Determine initial language from localStorage or environment
+const savedLocale = typeof window !== 'undefined' ? localStorage.getItem('locale') : null
+const initialLng = savedLocale || import.meta.env.VITE_APP_LOCALE || 'id'
+
 i18n.use(initReactI18next).init({
   resources: {
     id: { common: resources.id.common },
     en: { common: resources.en.common },
   },
-  lng: import.meta.env.VITE_APP_LOCALE || 'id',
+  lng: initialLng,
   fallbackLng: 'id',
   ns: ['common'],
   defaultNS: 'common',
   interpolation: { escapeValue: false },
+})
+
+// Sync document language attribute and persist changes
+if (typeof document !== 'undefined') {
+  document.documentElement.lang = i18n.language
+}
+i18n.on('languageChanged', (lng) => {
+  try {
+    if (typeof document !== 'undefined') {
+      document.documentElement.lang = lng
+    }
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('locale', lng)
+    }
+  } catch {}
 })
 
 export default i18n

@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import Button from '@/components/ui/Button'
 import { routes } from '@/config/routes'
+import { templateMap, buildWhatsAppLink } from '@/config/whatsapp'
 import { ChevronDown } from 'lucide-react'
 
 type FormData = {
@@ -27,8 +28,7 @@ export default function Contact() {
 
   const waNumber = import.meta.env.VITE_WA_NUMBER || '628118120070'
   const emailAddr = import.meta.env.VITE_EMAIL || 'rofi.darmawan@outlook.com'
-  const waText = encodeURIComponent('Halo SICOST, saya mau konsultasi website.')
-  const waLink = `https://wa.me/${waNumber}?text=${waText}`
+  const waLink = buildWhatsAppLink(t(templateMap.contactSupport))
 
   const schema = useMemo(
     () =>

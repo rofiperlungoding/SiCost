@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
 import { faqItems, faqCategories, type FAQCategory, faqLastUpdated } from '@/data/faq'
 import { routes } from '@/config/routes'
+import { templateMap, buildWhatsAppLink } from '@/config/whatsapp'
 import Button from '@/components/ui/Button'
 import { Search, Info, Wallet, Settings, ListChecks, LifeBuoy } from 'lucide-react'
 
@@ -21,9 +22,7 @@ export default function FAQ() {
   const [query, setQuery] = useState('')
   const [activeCategory, setActiveCategory] = useState<FAQCategory | 'all'>('all')
 
-  const waNumber = import.meta.env.VITE_WA_NUMBER || '628118120070'
-  const waText = encodeURIComponent('Halo SICOST, saya mau konsultasi website.')
-  const waLink = `https://wa.me/${waNumber}?text=${waText}`
+  const waLink = buildWhatsAppLink(t(templateMap.faqSupport))
 
   useEffect(() => {
     pushAnalytics('page_view', { page: 'faq' })
@@ -123,7 +122,7 @@ export default function FAQ() {
                   role="listitem"
                   onToggle={(e) => pushAnalytics('faq_toggle_item', { id: item.id, open: (e.target as HTMLDetailsElement).open })}
                 >
-                  <summary className="cursor-pointer font-medium focus:outline-none focus:ring-2 focus:ring-brand-500 rounded">
+                  <summary className="cursor-pointer font-medium focus:outline-none rounded select-none">
                     {t(item.questionKey)}
                   </summary>
                   <p className="mt-2 text-slate-700">{t(item.answerKey)}</p>

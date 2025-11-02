@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import FeatureCard from '@/components/FeatureCard'
 import Button from '@/components/ui/Button'
 import { routes } from '@/config/routes'
+import { templateMap, buildWhatsAppLink } from '@/config/whatsapp'
 import { Target, ShieldCheck, Sparkles } from 'lucide-react'
 
 export default function About() {
@@ -12,9 +13,7 @@ export default function About() {
   const values = t('about.values.items', { returnObjects: true }) as { title: string; desc: string }[]
   const steps = t('about.process.steps', { returnObjects: true }) as { title: string; desc: string }[]
 
-  const waNumber = import.meta.env.VITE_WA_NUMBER || '628118120070'
-  const waText = encodeURIComponent('Halo SICOST, saya mau konsultasi website.')
-  const waLink = `https://wa.me/${waNumber}?text=${waText}`
+  const waLink = buildWhatsAppLink(t(templateMap.aboutFinalCta))
 
   return (
     <div className="bg-white">
@@ -114,7 +113,7 @@ export default function About() {
           <div className="mt-8 grid md:grid-cols-2 gap-6" role="list">
             {steps.map((s, i) => (
               <details key={i} className="group border border-slate-200 rounded-xl p-5 bg-white" role="listitem">
-                <summary className="cursor-pointer font-medium focus:outline-none focus:ring-2 focus:ring-brand-500 rounded">
+                <summary className="cursor-pointer font-medium focus:outline-none rounded select-none">
                   {s.title}
                 </summary>
                 <p className="mt-2 text-slate-700">{s.desc}</p>

@@ -8,6 +8,8 @@ type Props = {
   onSortChange: (v: 'recent' | 'az' | 'za') => void
 }
 
+import { useTranslation } from 'react-i18next'
+
 export default function PortfolioFilters({
   categories,
   category,
@@ -17,20 +19,21 @@ export default function PortfolioFilters({
   onSearchChange,
   onSortChange,
 }: Props) {
+  const { t } = useTranslation('common')
   return (
     <div className="bg-white border border-slate-200 rounded-xl p-4 md:p-6">
       <div className="grid md:grid-cols-3 gap-4">
         {/* Search */}
         <div>
           <label htmlFor="portfolio-search" className="text-sm font-medium text-slate-700">
-            Cari proyek
+            {t('portfolio.filters.searchLabel')}
           </label>
           <input
             id="portfolio-search"
             type="text"
             value={search}
             onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="Ketik judul/fitur/teknologi"
+            placeholder={t('portfolio.filters.searchPlaceholder')}
             className="mt-2 w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
           />
         </div>
@@ -38,7 +41,7 @@ export default function PortfolioFilters({
         {/* Category */}
         <div>
           <label htmlFor="portfolio-category" className="text-sm font-medium text-slate-700">
-            Kategori
+            {t('portfolio.filters.categoryLabel')}
           </label>
           <select
             id="portfolio-category"
@@ -46,7 +49,7 @@ export default function PortfolioFilters({
             onChange={(e) => onCategoryChange(e.target.value)}
             className="mt-2 w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
           >
-            <option value="Semua">Semua</option>
+            <option value={t('portfolio.filters.all')}>{t('portfolio.filters.all')}</option>
             {categories.map((c) => (
               <option key={c} value={c}>
                 {c}
@@ -58,7 +61,7 @@ export default function PortfolioFilters({
         {/* Sort */}
         <div>
           <label htmlFor="portfolio-sort" className="text-sm font-medium text-slate-700">
-            Urutkan
+            {t('portfolio.filters.sortLabel')}
           </label>
           <select
             id="portfolio-sort"
@@ -66,9 +69,9 @@ export default function PortfolioFilters({
             onChange={(e) => onSortChange(e.target.value as 'recent' | 'az' | 'za')}
             className="mt-2 w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
           >
-            <option value="recent">Terbaru</option>
-            <option value="az">Nama A-Z</option>
-            <option value="za">Nama Z-A</option>
+            <option value="recent">{t('portfolio.filters.recent')}</option>
+            <option value="az">{t('portfolio.filters.az')}</option>
+            <option value="za">{t('portfolio.filters.za')}</option>
           </select>
         </div>
       </div>

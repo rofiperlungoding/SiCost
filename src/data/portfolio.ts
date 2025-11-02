@@ -3,6 +3,7 @@ export type PortfolioProject = {
   title: string
   description: string
   href: string
+  websiteUrl?: string
   category: 'Education' | 'Data Science' | 'Finance' | 'News/API' | 'Personal'
   technologies: string[]
   features: string[]
@@ -20,6 +21,7 @@ export const portfolio: PortfolioProject[] = [
     description:
       'Platform belajar matematika interaktif dengan solusi langkah demi langkah dan visualisasi konsep.',
     href: 'https://github.com/rofiperlungoding/mathlabrofi',
+    websiteUrl: 'https://rofimath.netlify.app/',
     category: 'Education',
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'KaTeX', 'MathJS', 'Algebrite', 'Plotly.js', 'Lucide React'],
     features: [
@@ -38,6 +40,7 @@ export const portfolio: PortfolioProject[] = [
     description:
       'Suite analisis statistik produksi dengan 16 aplikasi profesional untuk riset dan edukasi.',
     href: 'https://github.com/rofiperlungoding/statisticlabrofi',
+    websiteUrl: 'https://statisticslabrofi.netlify.app/',
     category: 'Data Science',
     technologies: ['React 18.3.1', 'TypeScript 5.5', 'Vite', 'Tailwind CSS', 'Recharts', 'D3', 'Papa Parse', 'Lodash'],
     features: [
@@ -56,6 +59,7 @@ export const portfolio: PortfolioProject[] = [
     description:
       'Aplikasi personal finance modern dengan analitik canggih, multi‑currency, dan autentikasi aman.',
     href: 'https://github.com/rofiperlungoding/moneytrackrrofi',
+    websiteUrl: 'https://moneytrackrrofi.netlify.app/',
     category: 'Finance',
     technologies: ['React 18', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'GSAP', 'Supabase', 'Recharts', 'Vite'],
     features: [
@@ -74,6 +78,7 @@ export const portfolio: PortfolioProject[] = [
     description:
       'Proyek berita Indonesia dengan integrasi detiknews_api dan update real‑time.',
     href: 'https://github.com/rofiperlungoding/rivex',
+    websiteUrl: 'https://rivex.space/',
     category: 'News/API',
     technologies: ['React', 'WebSocket', 'Node.js', 'Express', 'detiknews_api'],
     features: [
@@ -91,6 +96,7 @@ export const portfolio: PortfolioProject[] = [
     description:
       'Situs CV/Portfolio pribadi dengan showcase proyek, pengalaman, dan kontak.',
     href: 'https://github.com/rofiperlungoding/cvandriesatria',
+    websiteUrl: 'https://cvaspu.com/',
     category: 'Personal',
     technologies: ['React', 'Tailwind CSS', 'Vite'],
     features: [

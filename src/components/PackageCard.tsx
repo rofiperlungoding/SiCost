@@ -1,4 +1,5 @@
 import Button from '@/components/ui/Button'
+import { useTranslation } from 'react-i18next'
 
 type PackageCardProps = {
   title: string
@@ -10,6 +11,7 @@ type PackageCardProps = {
 }
 
 export default function PackageCard({ title, price, tagline, features, timeline, popular }: PackageCardProps) {
+  const { t } = useTranslation('common')
   return (
     <div
       className={`bg-white rounded-2xl p-10 border ${
@@ -18,7 +20,7 @@ export default function PackageCard({ title, price, tagline, features, timeline,
     >
       {popular && (
         <div className="text-xs px-2 py-1 bg-brand-50 text-brand-700 inline-block rounded mb-4">
-          Popular
+          {t('packages.standard.badge')}
         </div>
       )}
       <h3 className="text-xl font-semibold">{title}</h3>
@@ -31,7 +33,7 @@ export default function PackageCard({ title, price, tagline, features, timeline,
       </ul>
       <div className="mt-4 text-sm text-slate-600">{timeline}</div>
       <div className="mt-6">
-        <Button variant={popular ? 'primary' : 'ghost'}>Pilih Paket</Button>
+        <Button variant={popular ? 'primary' : 'ghost'}>{t('cta.choosePackage')}</Button>
       </div>
     </div>
   )

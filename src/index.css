@@ -7,10 +7,20 @@
   body {
     @apply antialiased bg-white text-slate-900 font-sans;
   }
+  /* Responsive base font scaling for mobile */
+  html { font-size: 16px; }
+  @media (max-width: 768px) { html { font-size: 15px; } }
+  @media (max-width: 480px) { html { font-size: 14px; } }
   a { @apply text-brand-600 hover:text-brand-700; }
+  /* Prevent text selection when toggling dropdown/accordion summaries */
+  details > summary { @apply select-none; }
 }
 
 /* Utilities for containers */
 .container {
   @apply mx-auto px-4 sm:px-6 lg:px-8;
 }
+
+/* Hide scrollbars for horizontal nav on mobile */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

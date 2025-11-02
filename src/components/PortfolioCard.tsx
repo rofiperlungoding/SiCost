@@ -1,10 +1,12 @@
 import type { PortfolioProject } from '@/data/portfolio'
+import { useTranslation } from 'react-i18next'
 
 type Props = {
   project: PortfolioProject
 }
 
 export default function PortfolioCard({ project }: Props) {
+  const { t } = useTranslation('common')
   // Buat deskripsi singkat (1 kalimat atau maksimal ~140 karakter)
   const shortDescription = (() => {
     const max = 140
@@ -39,7 +41,7 @@ export default function PortfolioCard({ project }: Props) {
               {project.category}
             </span>
           </div>
-          <span className="text-xs text-slate-500">Diperbarui: {project.updatedAt}</span>
+          <span className="text-xs text-slate-500">{t('portfolio.card.updated')}: {project.updatedAt}</span>
         </div>
 
         {/* Description (ringkas) */}
@@ -48,7 +50,7 @@ export default function PortfolioCard({ project }: Props) {
         {/* Features & Tech */}
         <div className="mt-4 grid sm:grid-cols-2 gap-4">
           <div>
-            <h4 className="text-sm font-semibold">Fitur Utama</h4>
+            <h4 className="text-sm font-semibold">{t('portfolio.card.featuresTitle')}</h4>
             <ul className="mt-2 space-y-1 text-sm text-slate-700">
               {project.features.slice(0, 2).map((f, i) => (
                 <li key={i}>• {f}</li>
@@ -56,7 +58,7 @@ export default function PortfolioCard({ project }: Props) {
             </ul>
           </div>
           <div>
-            <h4 className="text-sm font-semibold">Teknologi</h4>
+            <h4 className="text-sm font-semibold">{t('portfolio.card.techTitle')}</h4>
             <div className="mt-2 flex flex-wrap gap-2">
               {project.technologies.slice(0, 4).map((t, i) => (
                 <span key={i} className="text-xs px-2 py-1 rounded border border-slate-200 text-slate-700">
@@ -67,26 +69,31 @@ export default function PortfolioCard({ project }: Props) {
           </div>
         </div>
 
-        {/* Action: GitHub Button (selalu di bawah & simetris) */}
-        <div className="mt-auto pt-4 flex items-center justify-center">
+        {/* Actions: Website + GitHub */}
+        <div className="mt-auto pt-4 flex items-center justify-center gap-3 flex-wrap">
+          {project.websiteUrl && (
+            <a
+              href={project.websiteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${t('portfolio.card.viewWebsite')}: ${project.title}`}
+              className="group inline-flex items-center gap-2 rounded-xl px-3 py-1.5 text-sm font-medium bg-gradient-to-r from-brand-600 to-brand-700 text-white hover:text-white shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            >
+              <span className="select-none">{t('portfolio.card.viewWebsite')}</span>
+            </a>
+          )}
           <a
             href={project.href}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Kunjungi repositori GitHub: ${project.title}`}
+            aria-label={`${t('portfolio.card.viewGithub')}: ${project.title}`}
             className="group inline-flex items-center gap-2 rounded-xl px-3 py-1.5 text-sm font-medium
                        bg-gradient-to-r from-black via-black to-violet-700 !text-white hover:!text-white shadow-sm
                        hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98]
                        transition-all duration-200 ease-out
                        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           >
-            <img
-              src="https://cdn.simpleicons.org/github/ffffff"
-              alt=""
-              aria-hidden="true"
-              className="h-4 w-4 opacity-95 transition-transform duration-200 ease-out group-hover:translate-x-0.5"
-            />
-            <span className="select-none">Lihat di GitHub</span>
+            <span className="select-none">{t('portfolio.card.viewGithub')}</span>
           </a>
         </div>
       </div>

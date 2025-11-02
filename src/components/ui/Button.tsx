@@ -6,7 +6,7 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 }
 
 export default function Button({ variant = 'primary', className, ...rest }: ButtonProps) {
-  const base = 'inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium'
+  const base = 'inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium select-none min-h-[48px] min-w-[48px]'
   const styles = {
     primary: 'bg-brand-600 text-white hover:bg-brand-700',
     secondary:

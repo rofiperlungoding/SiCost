@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { templateMap, buildWhatsAppLink } from '@/config/whatsapp'
 import { 
   Zap, 
   Star, 
@@ -29,10 +30,9 @@ export default function ServiceCard({ package: pkg }: ServiceCardProps) {
   const IconComponent = iconMap[pkg.icon as keyof typeof iconMap] || Star
   
   const handleWhatsAppContact = () => {
-    const waNumber = import.meta.env.VITE_WA_NUMBER || '628118120070'
-    const message = `Halo! Saya tertarik dengan ${t(pkg.titleKey)}. Bisakah kita diskusi lebih lanjut?`
-    const whatsappUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`
-    window.open(whatsappUrl, '_blank')
+    const message = t(templateMap.servicesCard, { package: t(pkg.titleKey) })
+    const url = buildWhatsAppLink(message)
+    window.open(url, '_blank')
   }
 
   return (

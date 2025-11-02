@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { templateMap, buildWhatsAppLink } from '@/config/whatsapp'
 import { useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { ArrowRight, MessageCircle, Users, Target, Lightbulb } from 'lucide-react'
@@ -12,11 +13,14 @@ export default function Services() {
   const { t } = useTranslation()
   const [activeFilter, setActiveFilter] = useState<'all' | 'basic' | 'standard' | 'maintenance' | 'premium'>('all')
 
+  const handleWhatsAppGetStarted = () => {
+    const url = buildWhatsAppLink(t(templateMap.servicesFinalGetStarted))
+    window.open(url, '_blank')
+  }
+
   const handleWhatsAppContact = () => {
-    const waNumber = import.meta.env.VITE_WA_NUMBER || '628118120070'
-    const message = 'Halo! Saya ingin konsultasi tentang layanan pembuatan website. Bisakah kita diskusi?'
-    const whatsappUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`
-    window.open(whatsappUrl, '_blank')
+    const url = buildWhatsAppLink(t(templateMap.servicesFinalContact))
+    window.open(url, '_blank')
   }
 
   return (
@@ -195,7 +199,7 @@ export default function Services() {
             <h2 className="text-2xl md:text-3xl font-semibold">{t('finalCta.title')}</h2>
             <p className="mt-2 text-brand-100">{t('services.hero.subtitle')}</p>
             <div className="mt-6 flex gap-3">
-              <Button variant="secondary" className="bg-white hover:bg-slate-100" onClick={handleWhatsAppContact}>{t('cta.getStarted')}</Button>
+              <Button variant="secondary" className="bg-white hover:bg-slate-100" onClick={handleWhatsAppGetStarted}>{t('cta.getStarted')}</Button>
               <Button variant="ghost" className="text-white hover:bg-white/10" onClick={handleWhatsAppContact}>{t('cta.contactUs')}</Button>
             </div>
           </div>

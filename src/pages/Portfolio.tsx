@@ -4,6 +4,7 @@ import { routes } from '@/config/routes'
 import { portfolio as data } from '@/data/portfolio'
 import PortfolioCard from '@/components/PortfolioCard'
 import Button from '@/components/ui/Button'
+import { templateMap, buildWhatsAppLink } from '@/config/whatsapp'
 
 export default function Portfolio() {
   const { t } = useTranslation('common')
@@ -15,9 +16,7 @@ export default function Portfolio() {
     )
   }, [])
 
-  const waNumber = import.meta.env.VITE_WA_NUMBER || '628118120070'
-  const waText = encodeURIComponent('Halo SICOST, saya mau konsultasi website.')
-  const waLink = `https://wa.me/${waNumber}?text=${waText}`
+  const waLink = buildWhatsAppLink(t(templateMap.portfolioCta))
 
   return (
     <section className="container py-16 md:py-20">
